@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+body {
+    min-height: 100vh;    /* 确保至少撑满视口高度 */
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+    outline: none;
+}
+button {
+    color: white;
+    cursor: pointer;
+    background-color: #5670EA;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    flex: 1;              /* 自动填充剩余空间 */
+    overflow-y: auto;     /* 内容溢出时显示滚动条 */
+  }
+.navbar-left{
+    width: 517.383px;
+    height: 60px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+.nav-list li {
+    padding-right: 24px;
+}
+.login-btn {
+    width: 48px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.search-box{
+    width: 684px;
+    height: 314px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search input {
+    width: 550px;
+    height: 44px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px 0 0 10px;
+    border-right: none; /* 隐藏右侧边框 */
+}
+.search button {
+    width: 108px;
+    height: 44px;
+    color: white;
+    font-size: 16px;
+    background-color: #4E6EF2 ; 
+    border-left: none; /* 隐藏左侧边框 */
+    border-radius: 0  10px 10px 0;
+    position: relative;
+    left: -10px;
+    top: 1px;
+    z-index: 1; /* 确保按钮在上层 */
+}
+.footer-list{
+    font-family: Arial, sans-serif;
+    color: #bbbbbb;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 34px;
+}
+.footer-list li {
+    margin-right: 12px;
+}
